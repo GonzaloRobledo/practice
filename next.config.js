@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  // reactStrictMode: true,
+  images: {
+    domains: ['tse1.mm.bing.net']
+  }
+}
 
 module.exports = nextConfig

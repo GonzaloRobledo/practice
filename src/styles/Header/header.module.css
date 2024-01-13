@@ -1,0 +1,53 @@
+/**LOGO NAV CART**/
+.logo_nav_cart{
+    background-color: #F0F6FF;
+    padding:10px 0;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+.logo_nav_cart > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_nav_cart_dark{
+    background-color: #181920;
+}
+
+
+/**ACCESSs**/
+
+.access{
+    padding:10px 0;
+    background-color: #021431;
+    transition: all 0.2s ease;
+}
+
+.access_dark{
+    background-color: #414558;
+}
+
+.access > div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.access a, .access p{
+    display: inline-block;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color:#C7C9D1;
+    font-size:14px;
+    cursor: pointer;
+}
+
+.access a:hover, .access p:hover{
+    color: #FFFFFF
+}
+
+.access a:first-child{
+    margin-right: 30px;
+}

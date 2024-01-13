@@ -1,0 +1,85 @@
+.form_container {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  max-width: 384px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.form_container_dark{
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -4px rgb(0 0 0);
+}
+
+.form_container h1 {
+  text-align: center;
+  color: #394e6a;
+  font-size: 30px;
+}
+
+.form_container label {
+  margin-top: 25px;
+  display: block;
+  color: #394e6a;
+  font-size: 14px;
+  margin-bottom: 8px;
+  margin-left: 5px;
+}
+
+.form_container input {
+  display: block;
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 7.5px;
+  outline: none;
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+  color: #394e6a;
+}
+
+.form_container_dark input{
+    background-color: rgb(42, 42, 42);
+}
+
+.form_container_dark h1, .form_container_dark label, .form_container_dark input{
+    color: #F8F8F2
+}
+
+.change_method {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  margin-top:20px;
+}
+
+.change_method p {
+  font-size: 16px;
+  color: #394e6a;
+}
+
+.change_method a {
+  text-decoration: none;
+  color: #057aff;
+  font-size: 16px;
+}
+
+.change_method a:hover{
+    text-decoration: underline;
+}
+
+.form_container_dark .change_method p{
+    color: #F8F8F2;
+}
+
+.form_container_dark .change_method a{
+    color: #ff79c6;
+}
+
+.icon_view_password{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #394e6a;
+}

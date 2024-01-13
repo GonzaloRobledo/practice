@@ -1,0 +1,8 @@
+.container h2{
+    color: #394E6A;
+    font-size:28px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    padding-bottom:20px;
+    border-bottom:1px solid gainsboro
+}

@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+}
+
+
+.container_dark{
+    color: rgb(42, 42, 42)
+}
+
+.container > article{
+    flex-basis: calc(50% - 45px);
+}
+
+.container_content h2{
+    color: #394E6A;
+    font-size:50px;
+    line-height: 1.2;
+}
+
+.container_content p{
+    margin-top:32px;
+    color: #394E6A;
+    font-size:17px;
+    line-height: 2;
+}
+
+.container_content a{
+    margin-top:40px;
+}
+
+.container_dark .container_content h2{
+    color: #F8F8F2;
+}
+
+.container_dark .container_content p{
+    color: #F8F8F2;
+}

@@ -1,0 +1,141 @@
+.container {
+  padding: 16px 32px;
+  margin-top: 80px;
+  background-color: #f0f6ff;
+  border-radius: 6px;
+}
+
+.container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.container > div:last-child {
+  margin-top: 40px;
+}
+
+.container > div > * {
+  flex-basis: 25%;
+}
+
+.container input,
+.container label,
+.container select,
+.container button {
+  width: 100%;
+  display: block;
+}
+
+.container input,
+.container select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d4d4d4;
+  cursor: pointer;
+}
+
+.container label {
+  padding: 8px 4px;
+  color: #394e6a;
+  font-size: 13px;
+}
+
+.select_price > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select_price > div p {
+  color: #394e6a;
+  font-size: 15px;
+}
+
+.container_dark .select_price > div p{
+    color:white;
+}
+
+.free_shipping label {
+  text-align: center;
+}
+
+.free_shipping div {
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+  border: 1px solid #005fdb;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.container_dark .free_shipping div{
+    border:1px solid #FF7AC6;
+}
+
+.submit_button,
+.reset_button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  outline: none;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  background-color: #057aff;
+  border: 2px solid #057aff !important;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reset_button {
+  background-color: #c149ad;
+  border: 2px solid #c149ad !important;
+}
+
+.reset_button:hover {
+  background-color: inherit;
+  color: #c149ad;
+}
+
+.submit_button:hover {
+  background-color: inherit;
+  color: #057aff;
+}
+
+.container_dark{
+    background-color: #181920;
+}
+
+.container_dark input, .container_dark select{
+    background-color: #272935 !important;
+    color: white !important;
+    border:1px solid #7a7a7a !important;
+}
+
+.container_dark label{
+    color:white !important;
+}
+
+.container_dark .submit_button{
+    background-color: #FF7AC6 !important;
+    border: 2px solid #FF7AC6 !important;
+    color:black !important;
+}
+
+.container_dark .submit_button:hover{
+    background-color: inherit !important;
+    color: #FF7AC6 !important;
+}
+
+.container_dark .reset_button{
+    background-color: #FFB86B !important;
+    border: 2px solid #FFB86B !important;
+    color:black !important;
+}
+
+.container_dark .reset_button:hover{
+    background-color: inherit !important;
+    color: #FFB86B !important;
+}

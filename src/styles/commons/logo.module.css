@@ -1,0 +1,18 @@
+.container{
+    width:50px;
+    height: 50px;
+    background-color: #057AFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:30px;
+    color: #DBE1FF;
+    font-weight: bold;
+    transition: all 0.2s ease
+}
+
+.container_dark{
+    background-color: #FF7AC6;
+    color: #301C27;
+}
