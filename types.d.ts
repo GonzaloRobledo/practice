@@ -13,3 +13,10 @@ export type ProductType = {
     createdAt: string;
     updatedAt: string;
 }
+
+export type PaginateProdType = {
+    totalDocs:number;
+    limit:number;
+    totalPages:number;
+    page:number;
+}

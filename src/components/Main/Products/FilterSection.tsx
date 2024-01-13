@@ -2,8 +2,9 @@
 import { GlobalContext } from '@/context/global'
 import styles from '@/styles/Main/Products/filters.module.css'
 import { useContext } from 'react'
+import { ProductType } from '../../../../types'
 
-export const FilterSection = () => {
+export const FilterSection = ({ products }: { products: ProductType[] }) => {
   const { themeLight } = useContext(GlobalContext)
 
   return (

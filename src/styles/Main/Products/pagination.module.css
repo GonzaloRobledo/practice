@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content: flex-end;
+    user-select: none;
+}
+
+.container p:first-child{
+    border-radius: 8px 0 0 8px;
+}
+
+.container p:last-child{
+    border-radius: 0 8px 8px 0;
+}
+
+.container p{
+    padding:16px 16px;
+    color: #394E6A;
+    font-size:13px;
+    text-transform: uppercase;
+    background-color: #F0F6FF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.container p:hover{
+    background-color: #E2E8F4;
+}
+
+.active_page{
+    background-color: #E2E8F4 !important;
+}

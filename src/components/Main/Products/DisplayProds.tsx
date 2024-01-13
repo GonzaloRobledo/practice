@@ -4,23 +4,24 @@ import { HiOutlineBars3 } from 'react-icons/hi2'
 import styles from '@/styles/Main/Products/displayProds.module.css'
 import { useContext, useState } from 'react'
 import { GlobalContext } from '@/context/global'
+import { ProductsContext } from '@/context/products'
 
-export const DisplayProds = () => {
-  const [displayActive, setDisplayActive] = useState<Number>(1)
+export const DisplayProds = ({totalDocs}:{totalDocs:number}) => {
+  const {display, setDisplay} = useContext(ProductsContext)
   const {themeLight} = useContext(GlobalContext)
 
   const handleDisplay = (display: number) => {
-    setDisplayActive(display)
+    setDisplay(display)
   }
 
   return (
     <article className={`${styles.container} ${!themeLight ? styles.container_dark : ''}`}>
-      <p>22 products</p>
+      <p>{totalDocs} products</p>
       <div>
         <div
           style={{ display: 'flex', alignItems: 'center' }}
           className={`${styles.display_grid} ${
-            displayActive == 1 ? styles.option_active : ''
+            display == 1 ? styles.option_active : ''
           }`}
           onClick={() => handleDisplay(1)}
         >
@@ -28,7 +29,7 @@ export const DisplayProds = () => {
         </div>
         <div
           style={{ display: 'flex', alignItems: 'center' }}
-          className={`${displayActive == 2 ? styles.option_active : ''}`}
+          className={`${display == 2 ? styles.option_active : ''}`}
           onClick={() => handleDisplay(2)}
         >
           <HiOutlineBars3 className={`${styles.display_block} `} />

@@ -4,7 +4,15 @@ import { ProductType } from '../../../../types'
 import styles from '@/styles/Main/Home/products.module.css'
 import { GlobalContext } from '@/context/global'
 
-export const CardProduct = ({ item }: { item: ProductType }) => {
+export const CardProduct = ({
+  item,
+  descriptionActive = false,
+  companyActive = false
+}: {
+  item: ProductType
+  descriptionActive?: boolean
+  companyActive?: boolean
+}) => {
   const { themeLight } = useContext(GlobalContext)
   const image = item.images?.length > 0 ? item.images[0] : ''
   return (
@@ -17,7 +25,11 @@ export const CardProduct = ({ item }: { item: ProductType }) => {
         <img src={image} alt={item.name} />
       </div>
       <div>
-        <h3>{item.name}</h3>
+        <div className={styles.name_company_desc}>
+          <h3>{item.name}</h3>
+          {companyActive && <h5>{item.company}</h5>}
+          {descriptionActive && <p>{item.short_description}</p>}
+        </div>
         <p>${item.price}</p>
       </div>
     </div>
